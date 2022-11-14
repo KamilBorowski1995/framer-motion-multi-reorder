@@ -41,7 +41,6 @@ export function ReorderGroup(
       const rect = activeElement.target.getBoundingClientRect();
 
       contextGlobal.checkSwip(rect, index, velocityX);
-      // console.log(contextGlobal.activeitem);
 
       if (contextGlobal.ghost !== null) {
         const checkNewReorder = checkReorderGhost(
@@ -53,7 +52,6 @@ export function ReorderGroup(
 
         if (!checkNewReorder?.items || !checkNewReorder?.ghost) return;
         if (!arraysEqual(checkNewReorder.items, newReOrder)) {
-          // console.log(checkNewReorder);
           setNewReOrder(checkNewReorder.items);
           contextGlobal.updateOrderGhost(
             checkNewReorder.items.map(getValue),

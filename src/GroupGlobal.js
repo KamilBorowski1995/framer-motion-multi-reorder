@@ -95,7 +95,6 @@ export function ReorderGroup(
       }
       if (!arraysEqual(lastValues[ghost], items)) {
         lastValues[ghost] = items;
-        console.log("lastValues[ghost] = items", items);
         onReorder(lastValues);
       }
     },

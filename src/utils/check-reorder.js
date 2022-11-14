@@ -68,7 +68,6 @@ export function checkSwipeItem(item, i, containers, velocity) {
   if (!item?.x) return false;
 
   const nextItem = containers[i + velocity];
-  // console.log(i + velocity, containers);
 
   if (!nextItem) return false;
   const nextItemCenter = mix(

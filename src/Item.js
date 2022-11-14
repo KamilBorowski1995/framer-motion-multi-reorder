@@ -48,7 +48,6 @@ export function ReorderItem(
     x: useDefaultMotionValue(style.x),
     y: useDefaultMotionValue(style.y),
   };
-  // console.log("contextGlobal", contextGlobal);
   const zIndex = useTransform([point.x, point.y], ([latestX, latestY]) =>
     latestX || latestY ? 2 : 1
   );
