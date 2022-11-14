@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ol {
+  display: flex;
+}
+ol,
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  padding: 0 6px;
+  padding: 10px;
+}
+ol,
+ul {
+  width: 300px;
+  border-radius: 8px;
+}
+ol {
+  width: 600px;
+}
+li {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 100%;
+  min-height: 80px;
+  background-color: lightblue;
+  box-shadow: 0 0 6px 1px gray;
+  padding: 10px;
+  position: relative;
+}
+.ghost {
+  opacity: 0;
+}
